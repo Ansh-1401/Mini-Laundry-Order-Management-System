@@ -1,0 +1,13 @@
+const STATUS_ENUM = {
+    RECEIVED: 'RECEIVED',
+    PROCESSING: 'PROCESSING',
+    READY: 'READY',
+    DELIVERED: 'DELIVERED',
+};
+
+const VALID_STATUSES = Object.values(STATUS_ENUM);
+
+module.exports = {
+    STATUS_ENUM,
+    VALID_STATUSES
+};
