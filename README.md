@@ -42,17 +42,16 @@ A full-stack, AI-first web application designed to manage laundry orders seamles
 
 ---
 
-## ✨ Features Implemented
+## ✅ Key Features (Quick View)
 
-1. **Order Creation Pipeline**: Fully validates required inputs (customer name, phone, item quantities). Automatically computes totals via backend logic on static pricing (`Shirt: $20`, `Pants: $30`, `Saree: $50`).
-2. **Dashboard with KPIs**: Accurately showcases Total Orders, Total Revenue, and count split by status categories.
-3. **Order Listings & Search**: Allows users to view all orders natively with a 300ms debounced edge-search mapping against partial phone numbers and names, natively tied with a dropdown Status Filter.
-4. **State Management Enforcer**: Simple PUT endpoints map status changes against a strict enum cycle: `RECEIVED`, `PROCESSING`, `READY`, and `DELIVERED`.
-5. **Bonus Functionality**: 
-   - Estimated Delivery: Calculates a 3-day buffer from order placement automatically surfaced.
-   - Database Readiness: Centralized `orderModel.js` maps array storage directly utilizing `Model.find()` repository-like syntax making transitioning to MongoDB effortless.
+- Create laundry orders with multiple garments
+- Automatic bill calculation
+- Update order status (RECEIVED → DELIVERED)
+- Search orders by name or phone
+- Filter orders by status
+- Dashboard with total orders and revenue
+- Estimated delivery date
 
----
 
 ## 📖 Sample API Highlights
 
@@ -138,3 +137,8 @@ AI was utilized structurally mapping requirements from scaffolding up to iterati
 - Swap `Models.find()` over to MongoDB using Mongoose with minimal re-tooling natively.
 - Apply JSON Web Tokens (JWT) mapped defensively differentiating global roles from internal administrators.
 - Expand end-to-end tooling suites invoking Jest checks catching missing states.
+
+
+## 📸 Screenshots
+
+![App UI](./screenshots/app.png)
